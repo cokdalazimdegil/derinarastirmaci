@@ -120,7 +120,7 @@ export function MultiAgentVisualization({ className }: { className?: string }) {
       <div className="h-4 shrink-0"></div>
       <div className="flex h-6 w-full shrink-0 items-center justify-center">
         <div className="bg-muted/50 z-[200] flex rounded-3xl px-4 py-2">
-          <Tooltip title="Move to the previous step">
+          <Tooltip title="Önceki adıma geç">
             <Button variant="ghost" onClick={prevStep}>
               <ChevronLeft className="size-5" />
             </Button>
@@ -134,7 +134,7 @@ export function MultiAgentVisualization({ className }: { className?: string }) {
               )}
             </Button>
           </Tooltip>
-          <Tooltip title="Move to the next step">
+          <Tooltip title="Bir sonraki adıma geçin">
             <Button
               variant="ghost"
               onClick={() => {

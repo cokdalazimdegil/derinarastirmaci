@@ -15,7 +15,7 @@ import { Toaster } from "../components/deer-flow/toaster";
 export const metadata: Metadata = {
   title: "🦌 DeerFlow",
   description:
-    "Deep Exploration and Efficient Research, an AI tool that combines language models with specialized tools for research tasks.",
+    "Derin Keşif ve Verimli Araştırma, dil modellerini araştırma görevleri için özel araçlarla birleştiren bir yapay zeka aracıdır.",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 

@@ -9,8 +9,8 @@ export function MultiAgentSection() {
     <section className="relative flex w-full flex-col items-center justify-center">
       <SectionHeader
         anchor="multi-agent-architecture"
-        title="Multi-Agent Architecture"
-        description="Experience the agent teamwork with our Supervisor + Handoffs design pattern."
+        title="Çoklu-Ajan Mimarisi"
+        description="Süpervizör + Devir Tasarım Desenimizle acente ekip çalışmasını deneyimleyin."
       />
       <div className="flex h-[70vh] w-full flex-col items-center justify-center">
         <div className="h-full w-full">

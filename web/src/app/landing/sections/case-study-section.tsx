@@ -12,58 +12,58 @@ const caseStudies = [
   {
     id: "eiffel-tower-vs-tallest-building",
     icon: Building,
-    title: "How tall is Eiffel Tower compared to tallest building?",
+    title: "Eyfel Kulesi en yüksek binaya göre ne kadar uzundur?",
     description:
-      "The research compares the heights and global significance of the Eiffel Tower and Burj Khalifa, and uses Python code to calculate the multiples.",
+      "Araştırmada Eyfel Kulesi ile Burj Khalifa'nın yükseklikleri ve küresel önemleri karşılaştırılıyor ve katları hesaplamak için Python kodu kullanılıyor.",
   },
   {
     id: "github-top-trending-repo",
     icon: Github,
-    title: "What are the top trending repositories on GitHub?",
+    title: "GitHub'da en çok ilgi gören depolar hangileridir?",
     description:
-      "The research utilized MCP services to identify the most popular GitHub repositories and documented them in detail using search engines.",
+      "Araştırmada MCP servislerinden yararlanılarak en popüler GitHub depoları belirlendi ve arama motorları kullanılarak detaylı bir şekilde belgelendi.",
   },
   {
     id: "nanjing-traditional-dishes",
     icon: Ham,
-    title: "Write an article about Nanjing's traditional dishes",
+    title: "Nanjing'in geleneksel yemekleri hakkında bir makale yaz.",
     description:
-      "The study vividly showcases Nanjing's famous dishes through rich content and imagery, uncovering their hidden histories and cultural significance.",
+      "Çalışmada Nanjing'in ünlü yemekleri zengin içerik ve görsellerle canlı bir şekilde sergileniyor, gizli tarihler ve kültürel önemler ortaya çıkarılıyor.",
   },
   {
     id: "rental-apartment-decoration",
     icon: Home,
-    title: "How to decorate a small rental apartment?",
+    title: "Küçük kiralık daire nasıl dekore edilir?",
     description:
-      "The study provides readers with practical and straightforward methods for decorating apartments, accompanied by inspiring images.",
+      "Çalışmada, ilham verici görseller eşliğinde, okuyuculara daire dekorasyonu için pratik ve anlaşılır yöntemler sunuluyor.",
   },
   {
     id: "review-of-the-professional",
     icon: Film,
-    title: "Introduce the movie 'Léon: The Professional'",
+    title: "'Léon: The Professional' filmini tanıt.",
     description:
-      "The research provides a comprehensive introduction to the movie 'Léon: The Professional', including its plot, characters, and themes.",
+      "Araştırmada, 'Léon: The Professional' filminin konusu, karakterleri ve temaları da dahil olmak üzere kapsamlı bir giriş sunuluyor.",
   },
   {
     id: "china-food-delivery",
     icon: Bike,
-    title: "How do you view the takeaway war in China? (in Chinese)",
+    title: "Çin'deki paket servis savaşını nasıl görüyorsunuz? (Çince)",
     description:
-      "The research analyzes the intensifying competition between JD and Meituan, highlighting their strategies, technological innovations, and challenges.",
+      "Araştırmada JD ile Meituan arasındaki yoğunlaşan rekabet analiz edilerek, şirketlerin stratejileri, teknolojik yenilikleri ve karşılaştıkları zorluklar ortaya konuyor.",
   },
   {
     id: "ultra-processed-foods",
     icon: Pizza,
-    title: "Are ultra-processed foods linked to health?",
+    title: "Ultra işlenmiş gıdaların sağlıkla bağlantısı var mı?",
     description:
-      "The research examines the health risks of rising ultra-processed food consumption, urging more research on long-term effects and individual differences.",
+      "Araştırmada, aşırı işlenmiş gıda tüketiminin artmasının sağlık riskleri incelenerek, uzun vadeli etkiler ve bireysel farklılıklar konusunda daha fazla araştırma yapılması çağrısında bulunuluyor.",
   },
   {
     id: "ai-twin-insurance",
     icon: Bot,
-    title: 'Write an article on "Would you insure your AI twin?"',
+    title: '"Yapay zeka ikizinizi sigortalatır mıydınız?" konulu bir makale yazın."',
     description:
-      "The research explores the concept of insuring AI twins, highlighting their benefits, risks, ethical considerations, and the evolving regulatory.",
+      "Araştırmada, yapay zeka ikizlerinin sigortalanması kavramı ele alınıyor; faydalar, riskler, etik hususlar ve gelişen düzenlemeler vurgulanıyor.",
   },
 ];
 
@@ -72,8 +72,8 @@ export function CaseStudySection() {
     <section className="relative container hidden flex-col items-center justify-center md:flex">
       <SectionHeader
         anchor="case-studies"
-        title="Case Studies"
-        description="See DeerFlow in action through replays."
+        title="Örnek Çalışmalar"
+        description="Tekrarlarla Derin Araştırmacıyı aksiyon halinde izleyin."
       />
       <div className="grid w-3/4 grid-cols-1 gap-2 sm:w-full sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {caseStudies.map((caseStudy) => (
@@ -84,7 +84,7 @@ export function CaseStudySection() {
                 name: caseStudy.title,
                 description: caseStudy.description,
                 href: `/chat?replay=${caseStudy.id}`,
-                cta: "Click to watch replay",
+                cta: "Tekrarı izlemek için tıklayın",
                 className: "w-full h-full",
               }}
             />

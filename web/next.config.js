@@ -1,7 +1,3 @@
-/**
- * Run `build` or `dev` with `SKIP_ENV_VALIDATION` to skip env validation. This is especially useful
- * for Docker builds.
- */
 // Copyright (c) 2025 Bytedance Ltd. and/or its affiliates
 // SPDX-License-Identifier: MIT
 
@@ -16,23 +12,31 @@ import "./src/env.js";
 // is still evolving and may not yet be fully stable for production environments.
 
 const config = {
-  // For development mode
+  // Geliştirme modunda Turbopack kullanımı
   turbopack: {
     rules: {
       "*.md": {
-        loaders: ["raw-loader"],
-        as: "*.js",
+        loaders: ["raw-loader"], // Markdown dosyalarını raw-loader ile yükle
+        as: "*.js", // Markdown dosyasını JavaScript gibi işleme
       },
     },
   },
 
-  // For production mode
+  // Üretim modunda Webpack kullanımı
   webpack: (config) => {
+    // .md uzantılı dosyalar için raw-loader kullan
     config.module.rules.push({
-      test: /\.md$/,
-      use: "raw-loader",
+      test: /\.md$/, // Markdown dosyalarını işle
+      use: "raw-loader", // raw-loader ile içeriği yükle
     });
-    return config;
+    return config; // Yapılandırmayı geri döndür
+  },
+
+  // Çevresel doğrulamayı atlamak için `SKIP_ENV_VALIDATION` kullanılabilir.
+  // Özellikle Docker kullanırken faydalıdır, çünkü Docker'da çevresel değişkenlerin doğrulama işlemleri bazen hatalı olabilir.
+  // Bu özelliği, üretim ortamlarında kullanmaman önerilir.
+  env: {
+    SKIP_ENV_VALIDATION: process.env.SKIP_ENV_VALIDATION || false,
   },
 };
 

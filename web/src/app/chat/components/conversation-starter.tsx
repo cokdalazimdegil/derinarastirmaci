@@ -8,10 +8,10 @@ import { cn } from "~/lib/utils";
 import { Welcome } from "./welcome";
 
 const questions = [
-  "How many times taller is the Eiffel Tower than the tallest building in the world?",
-  "How many years does an average Tesla battery last compared to a gasoline engine?",
-  "How many liters of water are required to produce 1 kg of beef?",
-  "How many times faster is the speed of light compared to the speed of sound?",
+  "Eyfel Kulesi dünyanın en yüksek binasından kaç kat daha uzundur?",
+  "Ortalama bir Tesla aküsü, benzinli bir motora kıyasla kaç yıl dayanır?",
+  "1 kg dana eti üretmek için kaç litre suya ihtiyaç vardır?",
+  "Işık hızı ses hızının kaç katıdır?",
 ];
 export function ConversationStarter({
   className,

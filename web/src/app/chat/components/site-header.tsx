@@ -12,8 +12,8 @@ export async function SiteHeader() {
     <header className="supports-backdrop-blur:bg-background/80 bg-background/40 sticky top-0 left-0 z-40 flex h-15 w-full flex-col items-center backdrop-blur-lg">
       <div className="container flex h-15 items-center justify-between px-3">
         <div className="text-xl font-medium">
-          <span className="mr-1 text-2xl">🦌</span>
-          <span>DeerFlow</span>
+          <span className="mr-1 text-2xl">😎</span>
+          <span>Nuri Can AVŞAR</span>
         </div>
         <div className="relative flex items-center">
           <div
@@ -29,9 +29,8 @@ export async function SiteHeader() {
             asChild
             className="group relative z-10"
           >
-            <Link href="https://github.com/bytedance/deer-flow" target="_blank">
-              <GitHubLogoIcon className="size-4" />
-              Star on GitHub
+            <Link href="https://instagram.com/ncaorgod" target="_blank">
+              Ziyaret et
               {env.NEXT_PUBLIC_STATIC_WEBSITE_ONLY &&
                 env.GITHUB_OAUTH_TOKEN && <StarCounter />}
             </Link>

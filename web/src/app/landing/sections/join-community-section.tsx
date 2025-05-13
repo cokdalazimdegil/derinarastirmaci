@@ -16,15 +16,15 @@ export function JoinCommunitySection() {
         anchor="join-community"
         title={
           <AuroraText colors={["#60A5FA", "#A5FA60", "#A560FA"]}>
-            Join the DeerFlow Community
+            Derin Araştırmacı Topluluğuna Katılın
           </AuroraText>
         }
-        description="Contribute brilliant ideas to shape the future of DeerFlow. Collaborate, innovate, and make impacts."
+        description="Derin Araştırmacının geleceğini şekillendirmek için parlak fikirler sunun. İş birliği yapın, yenilik yapın ve etki yaratın."
       />
       <Button className="text-xl" size="lg" asChild>
         <Link href="https://github.com/bytedance/deer-flow" target="_blank">
           <GithubFilled />
-          Contribute Now
+          şimdi katkıda bulun
         </Link>
       </Button>
     </section>

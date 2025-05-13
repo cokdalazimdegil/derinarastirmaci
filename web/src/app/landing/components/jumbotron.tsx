@@ -34,15 +34,14 @@ export function Jumbotron() {
       <div className="relative z-10 flex flex-col items-center justify-center gap-12">
         <h1 className="text-center text-4xl font-bold md:text-6xl">
           <span className="bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
-            Deep Research{" "}
+            Derin Araştırmacı{" "}
           </span>
-          <AuroraText>at Your Fingertips</AuroraText>
+          <AuroraText>Parmaklarınızın Ucunda</AuroraText>
         </h1>
         <p className="max-w-4xl p-2 text-center text-sm opacity-85 md:text-2xl">
-          Meet DeerFlow, your personal Deep Research assistant. With powerful
-          tools like search engines, web crawlers, Python and MCP services, it
-          delivers instant insights, comprehensive reports, and even captivating
-          podcasts.
+          Kişisel Derin Araştırma asistanınız Derin Araştırmacı ile tanışın. Arama motorları, web tarayıcıları, Python ve MCP hizmetleri gibi güçlü
+araçlarla, anında içgörüler, kapsamlı raporlar ve hatta büyüleyici
+podcast'ler sunar. Nuri Can AVŞAR tarafından yeniden dizayn edildi ve programlandı.
         </p>
         <div className="flex gap-6">
           <Button className="hidden text-lg md:flex md:w-42" size="lg" asChild>
@@ -78,7 +77,7 @@ export function Jumbotron() {
         </div>
       </div>
       <div className="absolute bottom-8 flex text-xs opacity-50">
-        <p>* DEER stands for Deep Exploration and Efficient Research.</p>
+        <p>Derin ve Verimli Araştırma.</p>
       </div>
     </section>
   );

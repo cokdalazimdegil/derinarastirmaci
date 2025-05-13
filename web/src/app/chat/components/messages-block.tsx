@@ -133,10 +133,10 @@ export function MessagesBlock({ className }: { className?: string }) {
                     <CardDescription>
                       <RainbowText animated={responding}>
                         {responding
-                          ? "DeerFlow is now replaying the conversation..."
+                          ? "Derin Araştırmacı şu anda diyalogları tekrar oynatıyor..."
                           : replayStarted
-                            ? "The replay has been stopped."
-                            : `You're now in DeerFlow's replay mode. Click the "Play" button on the right to start.`}
+                            ? "Tekrar durduruldu."
+                            : `Artık Derin Araştırmacının tekrar modundasınız. Başlamak için sağdaki "Oynat" düğmesine tıklayın.`}
                       </RainbowText>
                     </CardDescription>
                   </CardHeader>
@@ -165,17 +165,16 @@ export function MessagesBlock({ className }: { className?: string }) {
             </Card>
             {!replayStarted && env.NEXT_PUBLIC_STATIC_WEBSITE_ONLY && (
               <div className="text-muted-foreground w-full text-center text-xs">
-                * This site is for demo purposes only. If you want to try your
-                own question, please{" "}
+                * Bu site yalnızca demo amaçlıdır. Kendi sorunuzu denemek istiyorsanız lütfen{" "}
                 <a
                   className="underline"
                   href="https://github.com/bytedance/deer-flow"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  click here
+                  buraya tıklayın
                 </a>{" "}
-                to clone it locally and run it.
+                yerel olarak klonlamak ve çalıştırmak için.
               </div>
             )}
           </motion.div>
